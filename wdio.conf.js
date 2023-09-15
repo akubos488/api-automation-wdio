@@ -54,9 +54,8 @@ exports.config = {
         browserName: 'chrome',
         acceptInsecureCerts: true,
         "goog:chromeOptions": {
-            args: ["--start-fullscreen","--disable-web-security", "--disable-notifications", "--disable-dev-shm-usage", "--no-sandbox", "--window-size=1920,1080"]
-        },
-        timeouts: { implicit: 20000, pageLoad: 20000, script: 30000 },
+            args: ["--headless"]
+        }
     }],
 
     //
