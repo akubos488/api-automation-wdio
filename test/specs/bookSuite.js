@@ -39,17 +39,16 @@ describe.only('User Book Collection', function () {
 
   it('should not able to add a book to the user collection using empty ISBN with valid token', async function () {
     const response = await postBooks(userId, token," ");
-    console.log(response.body)
     await expect(response.body.code).equal("1205")
     await expect(response.body.message).equal("ISBN supplied is not available in Books Collection!")
     await expect(response.status).equal(400)
   });
 
   it('should not able to add a book to the user collection using wrong USERID with valid token', async function () {
-    const response = await postBooks(data.wrongUserID, token," ");
+    const response = await postBooks(data.wrongUserID, token, isbn);
     await expect(response.body.code).equal("1207")
     await expect(response.body.message).equal("User Id not correct!")
-    await expect(response.status).equal(400)
+    await expect(response.status).equal(401)
   });
 
   it('should not able to add a book to the user collection with invalid token', async function () {
@@ -68,7 +67,7 @@ describe.only('User Book Collection', function () {
   it('should not able to delete a book from the user collection with invalid USERID', async function () {
     const response = await deleteBooks(data.wrongUserID, token);
     await expect(response.body.code).equal("1207")
-    await expect(response.body.message).equal("User not authorized!")
+    await expect(response.body.message).equal("User Id not correct!")
     await expect(response.statusCode).equal(401)
   });
   
