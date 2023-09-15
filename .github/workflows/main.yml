@@ -1,0 +1,24 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+on:
+  push:
+    branches-ignore:
+      - '!master'
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+          
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - run: npm i 
+      - name: Run Test
+        env:
+ 
+        run: npm run wdio
+
+
+          
