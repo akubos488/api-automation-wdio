@@ -1,7 +1,7 @@
-[# dotindonesia-assesment](https://bookstore.toolsqa.com/swagger/ Automation test
+API Automation test
 ======================================================
 
-This is a guide for testing APIs using Webdriverio, Supertest, and Chai.
+This is a guide for testing APIs using Webdriverio, Supertest, and Chai
 
 Installation
 ------------
