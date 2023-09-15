@@ -3,6 +3,8 @@ API Automation test
 
 This is a guide for testing APIs using Webdriverio, Supertest, and Chai
 
+![image](https://github.com/rahuljoshua77/dotindonesia-assesment/assets/73378179/61a031f8-330e-4ed9-9fc3-b16c55d6e83a)
+
 Installation
 ------------
 
