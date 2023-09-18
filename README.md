@@ -12,7 +12,7 @@ To use this testing suite, follow the installation steps below:
 
 1.  Clone this repository to your project directory:
 
-    git clone https://github.com/rahuljoshua77/dotindonesia-assesment.git
+    git clone https://github.com/rahuljoshua77/API-Automation-WDIO.git
 
 3.  Navigate to the project directory:
 
